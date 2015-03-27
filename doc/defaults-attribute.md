@@ -46,4 +46,17 @@ And after that, in our HTML code we will define our leaflet directive like this:
 <leaflet defaults="defaults"></leaflet>
 ```
 
+Additionally, we can specify leaflet [TileLayer](http://leafletjs.com/reference.html#tilelayer) options by adding the `tileLayerOptions` property to our `defaults`.
+
+```
+angular.extend($scope, {
+   defaults: {
+      tileLayerOptions: {
+         detectRetina: true
+      },
+   }
+});
+```
+
+
 And that's all. A full example of using this attribute can be found [here](http://tombatossals.github.io/angular-leaflet-directive/examples/custom-parameters-example.html).
